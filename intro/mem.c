@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
     } 
     int *p; 
     p = malloc(sizeof(int));
-    assert(p != NULL);
+    assert(p != NULL); // Chen doesnt have an assert in the xv6 kernel
     printf("(%d) addr pointed to by p: %p\n", (int) getpid(), p);
     *p = atoi(argv[1]); // assign value to addr stored in p
     while (1) {
